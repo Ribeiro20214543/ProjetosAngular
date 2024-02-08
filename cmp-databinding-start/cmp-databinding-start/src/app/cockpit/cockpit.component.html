@@ -1,0 +1,26 @@
+<!-- Contêiner de linha para a seção de formulário -->
+<div class="row">
+  <!-- Coluna que ocupa toda a largura em dispositivos extra pequenos (xs) e maiores -->
+  <div class="col-xs-12">
+    <!-- Mensagem informativa para o usuário -->
+    <p>Add new Servers or blueprints!</p>
+
+    <!-- Campo de entrada (input) para o nome do servidor com vinculação bidirecional [(ngModel)] -->
+    <label>Server Name</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerName"> -->
+    <!-- #serverNameInput é uma referência local -->
+    <input type="text" class="form-control" #serverNameInput>
+    <!-- Campo de entrada (input) para o conteúdo do servidor com vinculação bidirecional [(ngModel)] -->
+    <label>Server Content</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+    <!-- #serverContentInput é uma referência local -->
+    <input type="text" class="form-control" #serverContentInput>
+    <br>
+
+    <!-- Botão (output) para adicionar um novo servidor, vinculado ao método onAddServer() -->
+    <button class="btn btn-primary" (click)="onAddServer(serverNameInput)">Add Server</button>
+
+    <!-- Botão (output) para adicionar um novo blueprint de servidor, vinculado ao método onAddBlueprint() -->
+    <button class="btn btn-primary" (click)="onAddBlueprint(serverContentInput)">Add Server Blueprint</button>
+  </div>
+</div>

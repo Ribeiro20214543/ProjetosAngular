@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Add A button which says 'Display Details'</li>
+        <li>
+          Add a paragraph with any content of your choice (e.g. 'Secret Password
+          = tuna')
+        </li>
+        <li>
+          Toggle the displaying of that paragraph with the button created in the
+          first step
+        </li>
+        <li>
+          Log all button clicks in an array and output that array below the
+          secret paragraph (maybe log a timestamp or simply an incrementing
+          number)
+        </li>
+        <li>
+          Starting at the 5th log item, give all future log items a blue
+          background (via ngStyle) and white color (ngClass)
+        </li>
+      </ol>
+      <hr />
+      <!-- 
+      Botão simples que alterna o valor da variável 'showSecret' entre verdadeiro e falso
+      quando clicado. A classe 'btn' é usada para estilização, e 'btn-primary'
+      define o estilo primário do botão.
+      -->
+      <!-- <button class="btn btn-primary" (click)="showSecret = !showSecret">Display Details</button> -->
+
+      <button class="btn btn-primary" (click)="onToggDetails()">
+        <!-- 
+        Botão para exibir ou ocultar detalhes. 
+        Quando clicado, o método 'onToggleDetails()' será chamado.
+        Utiliza as classes 'btn' e 'btn-primary' para estilização.
+        -->
+        Display Details
+      </button>
+      <!-- 
+    Parágrafo que só será exibido se a variável 'showSecret' for verdadeira.
+    Exibe a senha secreta como "Secret Password = tuna".
+      -->
+      <p *ngIf="showSecret">Secret Password = tuna</p>
+    <!-- 
+    Div que utiliza a diretiva *ngFor para iterar sobre a matriz 'log'.
+    - A variável 'logItem' representa cada item na iteração.
+    - A variável 'i' representa o índice da iteração.
+      
+    Aplica estilos condicionais com base no índice:
+    - O fundo pode ser azul se o índice for maior ou igual a 4.
+    - Adicionalmente, a classe 'white-text' é aplicada se o índice for maior ou igual a 4.
+    -->
+      <div
+        *ngFor="let logItem of log; let i = index"
+        [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+        [ngClass]="{ 'white-text': i >= 4 }"
+      >
+        {{ logItem }}
+      </div>
+    </div>
+  </div>
+</div>

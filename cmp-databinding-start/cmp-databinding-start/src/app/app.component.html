@@ -1,0 +1,19 @@
+<!-- Container principal usando a classe "container" do Bootstrap -->
+<div class="container">
+  <app-cockpit 
+  (serverCreated)="onServerAdded($event)"
+  (blueprintCreated)="onBlueprintAdded($event)"
+  ></app-cockpit>
+  <!-- Linha horizontal para separar visualmente -->
+  <hr>
+
+  <!-- Row para exibir os elementos do servidor usando *ngFor -->
+  <div class="row">
+    <div class="col-xs-12">
+      <app-server-element 
+      *ngFor="let serverElement of serverElements" 
+      [srvElement]="serverElement">
+    </app-server-element>
+    </div>
+  </div>
+</div>

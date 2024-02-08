@@ -1,0 +1,32 @@
+<!-- Botão para adicionar uma nova receita -->
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipe</button>
+    </div>
+</div>
+<!-- Linha horizontal para separar visualmente -->
+<hr>
+<!-- Lista de receitas usando *ngFor para iterar sobre a matriz de receitas -->
+<div class="row">
+    <div class="col-xs-12">
+        <!-- Âncora (link) para cada receita na matriz 'recipes' -->
+        <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
+            <!-- Bloco à esquerda com o nome e descrição da receita -->
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+                <p class="list-group-item-text">{{ recipe.description }}</p>
+            </div>
+            <!-- Imagem à direita com o caminho da imagem da receita -->
+            <span class="pull-right">
+                <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-responsive" style="max-height: 50px;">
+            </span>
+        </a>
+        <!-- Componente personalizado 'app-recipe-item' que parece estar incompleto ou fora de contexto -->
+        <app-recipe-item></app-recipe-item>
+        <!-- Compare este trecho com src/app/recipes/recipe-list/recipe-list.component.html -->
+    </div>
+</div>
+
+
+  
+

@@ -1,0 +1,22 @@
+<!-- Etiqueta para o nome do servidor -->
+<label>Server Name</label>
+
+<!-- Input para o nome do servidor com binding bidirecional usando ngModel -->
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<!-- Botão para adicionar um novo servidor, desabilitado se não for permitido -->
+<button class="btn btn-primary " [disabled]="!allowNewServer" (click)="onCreateServer()">Add server</button>
+
+<!-- Exibe uma mensagem se um servidor foi criado, senão exibe uma mensagem alternativa -->
+<p *ngIf="serverCreated, else noServer">Server was created, server name is {{ serverName}}</p>
+
+<!-- Template alternativo para quando nenhum servidor foi criado -->
+<ng-template #noServer>
+    <p>No server was created!</p>
+</ng-template>
+
+<!-- 
+Renderiza o componente 'app-server' para cada item na matriz 'servers',
+utilizando a variável temporária 'server'.
+-->
+<app-server *ngFor="let server of servers"></app-server>

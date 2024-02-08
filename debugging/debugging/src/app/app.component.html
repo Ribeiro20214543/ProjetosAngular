@@ -1,0 +1,33 @@
+<!-- Container principal usando a classe "container" do Bootstrap -->
+<div class="container">
+
+  <!-- Linha da grade usando a classe "row" do Bootstrap -->
+  <div class="row">
+
+    <!-- Coluna que ocupa 12 colunas em telas pequenas ou maiores usando "col-xs-12" do Bootstrap -->
+    <div class="col-xs-12">
+
+      <!-- Título do bloco -->
+      <h2>My Servers</h2>
+
+      <!-- Botão para adicionar um novo servidor, vinculado ao método onAddServer() no componente Angular -->
+      <button class="btn btn-primary" (click)="onAddServer()">Add Server</button>
+
+      <!-- Quebras de linha para dar espaço ao botão -->
+      <br><br>
+
+      <!-- Lista de servidores usando a classe "list-group" do Bootstrap -->
+      <ul class="list-group">
+
+        <!-- Item da lista gerado dinamicamente para cada servidor na matriz 'servers' usando *ngFor -->
+        <li class="list-group-item" *ngFor="let server of servers; let i = index" (click)="onRemoveServer(i)">
+          {{ server }} <!-- Exibe o nome do servidor -->
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>

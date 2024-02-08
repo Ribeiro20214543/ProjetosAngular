@@ -1,0 +1,9 @@
+<!-- ngStyle aplica um estilo dinâmico com base na cor retornada pelo método getColor() -->
+<!-- ngClass aplica a classe CSS 'online' se a variável 'serverStatus' for igual a 'online'.-->
+<p 
+    [ngStyle]="{backgroundColor: getColor()}"
+    
+    [ngClass]="{online: serverStatus == 'online'}"
+>
+    {{"Server"}} with ID {{serverId}} is {{getServerStatus()}}.
+</p>

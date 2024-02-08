@@ -1,0 +1,15 @@
+<!-- Painel para cada elemento do servidor -->
+<div class="panel panel-default">
+
+    <!-- Cabeçalho do painel exibindo o nome do elemento -->
+    <div class="panel-heading">{{ element.name }}</div>
+
+    <!-- Corpo do painel exibindo o conteúdo do servidor ou blueprint -->
+    <div class="panel-body">
+        <p>
+            <!-- Condicional para exibir o conteúdo do servidor em vermelho ou do blueprint em itálico -->
+            <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+            <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+        </p>
+    </div>
+</div>
