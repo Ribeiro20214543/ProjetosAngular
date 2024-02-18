@@ -9,7 +9,7 @@
     * Instalar e configurar IDE (Ambiente de Desenvolvimento Integrado)
 
 
-2. **Licão 1: "Hello, Word!"**:
+2. **Licão 00: "Hello, Word!"**:
     * Fluxo de trabalho básico:
         * Criar novo projeto angular (ng new + nome-projeto - Ex. ng new first-app)
         * Acessar projeto criado (cd nome-projeto - Ex. cd first-app)
@@ -24,21 +24,27 @@
         * Confirmar se o site padrão aparece no navegador.
     * Revisão dos arquivos do projeto
 
-3. **Lição 2 e 3: Criar componente**:
+3. **Lição 01 e 02: Criar componente**:
     * Visão conceitual de componentes
     * Criar componentes  (ex: ng generate component home --inline-template --skip-tests), onde home é o componente criado
     * Add o compomente  criado ao layout do app
     * Add recursos ao componente criado
 
-4. **Lição 4: Criar interface**:
+4. **Lição 03: Criar interface**:
     * Visão conceitual de interfaces
     * Criar interfaces (ex.ng generate interface housinglocation ) , onde  housinglocation é a interface criada
     * Add propriedades á interface criada
     * Criar teste para a app
 
-5. **Lição 5: Incluir parâmetro de entrada no componente**:
+5. **Lição 04: Incluir parâmetro de entrada no componente**:
     * Visão conceitual de entradas
     * Importar Input decorator (Decorador de entradas) 
     * Add Input property (propriedades de entradas)
 
-    
+6. **Lição 05: Adicionar uma Property binding (associação de propriedade) ao componente template**:
+    * Visão conceitual de associação de propriedades
+    * Add property binding <componente>**[** atributo **]** **=** **"** valor **"**</componente> 
+
+7. **Lição 06: Adicionar uma Interpolation (interpolação) ao componente template**:
+    * Visão conceitual de interpolação
+    * Add interpolation <componente>**{{** expressão **}}**</componente> 
