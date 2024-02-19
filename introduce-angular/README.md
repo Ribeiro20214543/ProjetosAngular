@@ -45,8 +45,26 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
 
 6. **Lição 05: Adicionar uma Property binding (associação de propriedade) ao componente template**:
     * Visão conceitual de associação de propriedades
-    * Add property binding <pre><componente>**[** atributo **]** **=** **"** valor **"**</componente></pre> 
+    * Add property binding <pre>**[** atributo **]** **=** **"** valor **"**</pre> 
 
 7. **Lição 06: Adicionar uma Interpolation (interpolação) ao componente template**:
     * Visão conceitual de interpolação
-    * Add interpolation <componente>**{{** expressão **}}**</componente> 
+    * Add interpolation <pre>**{{** expressão **}}**</pre> 
+
+8. **Lição 07: Usar *ngFor para listar objetos no componente**:
+    * Visão conceitual de *ngFor
+    * Add ngFor diretiva <pre>*ngFor = "expressão"</pre>  
+
+9. **Lição 08: Criar Serviços em Angular e Usar Injeção de Dependência**:
+    * Visão conceitual de Angular services e de Dependecy Inject
+    * Crir um serviço <pre>ng generate service housing --skip-tests</pre>, onde housing é o serviço criado
+    * Add dados estáticos no serviço criado
+    * Injetar dependência no serviço criado 
+        * Importar: <pre>import { Component, inject } from '@angular/core';</pre>  
+        * <pre> housingLocationList: HousingLocation[] = [];
+                housingService: HousingService = inject(HousingService);
+
+                constructor() {
+                this.housingLocationList = this.housingService.getAllHousingLocations();
+                }               
+      </pre>
