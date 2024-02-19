@@ -68,3 +68,30 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
                 this.housingLocationList = this.housingService.getAllHousingLocations();
                 }               
       </pre>
+
+10. **Lição 09: Add rotas ao app**:
+    * Visão conceitual de roteamento
+    * Criar componente padrão  <pre>ng generate component details --inline-template --skip-tests</pre> onde detais é o component padrão criado
+    * Criar um arquivo denominado **routes.ts** (Arquivo de definição das rotas)
+    * Add roteamento:
+        <pre>import { provideRouter } from '@angular/router';
+             import routeConfig from './app/routes';
+        </pre> 
+    
+     ** Atualizar chamada para **bootstrapApplication** incluindo a configuração de roteamento
+        <pre>bootstrapApplication(AppComponent,
+                {
+                    providers: [
+                    provideProtractorTestingSupport(),
+                    provideRouter(routeConfig)
+                    ]
+                }
+                ).catch(err => console.error(err));
+        </pre>
+    * Add rota ao componente criado
+
+
+    
+<pre></pre>
+
+
