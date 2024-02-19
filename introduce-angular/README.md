@@ -51,7 +51,7 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
     * Visão conceitual de interpolação
     * Add interpolation <pre>**{{** expressão **}}**</pre> 
 
-8. **Lição 07: Usar *ngFor para listar objetos no componente**:
+8. **Lição 07: Usar ngFor para listar objetos no componente**:
     * Visão conceitual de *ngFor
     * Add ngFor diretiva <pre>*ngFor = "expressão"</pre>  
 
