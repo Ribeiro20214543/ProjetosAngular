@@ -55,3 +55,9 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
 8. **Lição 07: Usar *ngFor para listar objetos no ao componente**:
     * Visão conceitual de *ngFor
     * Add  ngFor diretiva <pre><componente>*ngFor = "expressão"</componente> </pre>
+
+9. **Lição 08: Criar Serviços Angular e Usar Injeção de Dependência**:
+    * Visão conceitual de Angular services e de Dependecy Injection
+    * Criar service  <pre><componente>ng generate service housing --skip-tests</componente> </pre> onde housing é o serviço criado
+    * Add dados estáticos ao serviço criado
+    * Injetar o serviço criado no componente <pre>import { Component, inject } from '@angular/core';</pre>
