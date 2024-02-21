@@ -15,7 +15,7 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
     * Fluxo de trabalho básico:
         * Criar novo projeto angular <pre>ng new + nome-projeto</pre> 
         * Acessar projeto criado <pre> cd nome-projeto</pre> -
-        * Criar e executar o servidor local  <pre>ng serve</pre>  - em (http://localhost:4200)
+        * Criar e executar o servidor local  <pre>ng serve</pre>  - em http://localhost:4200
         * Confirmar se o site padrão aparece no navegador.
     * Fluxo de trabalho para aplicações já iniciadas:
         * Acessar projeto já iniciado <pre>cd nome-projeto</pre>
