@@ -69,7 +69,7 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
                 }               
       </pre>
 
-10. **Lição 09: Add rotas ao app**:
+10. **Lição 09 e 10: Add rotas ao app**:
     * Visão conceitual de roteamento
     * Criar componente padrão  <pre>ng generate component details --inline-template --skip-tests</pre> onde detais é o component padrão criado
     * Criar um arquivo denominado **routes.ts** (Arquivo de definição das rotas)
@@ -89,8 +89,13 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
                 ).catch(err => console.error(err));
         </pre>
     * Add rota ao componente criado
+    * Visão conceitual de roteamento com parâmetro
+    * routerLink diretiva <pre> <a>[routerLink]="['/details', housingLocation.id]">Texto exibido </a></pre>
+    * Import RouterLink e RouterOutlet from '@angular/router'
+    * Obter parâmetro da rota
+    * Add navegação 
 
-
+11. **Lição 10: Integrar a página de **:
     
 <pre></pre>
 
