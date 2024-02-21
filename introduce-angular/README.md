@@ -78,7 +78,7 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
              import routeConfig from './app/routes';
         </pre> 
     
-     ** Atualizar chamada para **bootstrapApplication** incluindo a configuração de roteamento
+      * Atualizar chamada para **bootstrapApplication** incluindo a configuração de roteamento
         <pre>bootstrapApplication(AppComponent,
                 {
                     providers: [
