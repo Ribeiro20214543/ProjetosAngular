@@ -106,6 +106,13 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
     * Add evento
     * Implementar função de manipular eventos
     
-<pre></pre>
+13. **Lição 13: Add comunicação HTTP  ao app**:
+    * Configurar servidor JSON
+        * Instalar jason-server a partir do npm:  
+            <pre>npm install -g json-server</pre> 
+        * Após configurado use este comando para testar:
+        <pre>json-server --watch db.json</pre>
+    * Atualizar o serviço para usar o servidor web em vez do array local
+    * Atualizar os componentes para usar chamadas assíncronas 
 
 
