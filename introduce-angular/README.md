@@ -95,7 +95,16 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
     * Obter parâmetro da rota
     * Add navegação 
 
-11. **Lição 10: Integrar a página de **:
+11. **Lição 11: Add formulário ao app**:
+    * Add método para enviar dados
+    * Add funções de formulário
+    <pre>import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';</pre>
+    * Add marcações de forumlário
+    * Testar formulário
+
+12. **Lição 12: Add recurso de pesquisa**:
+    * Add evento
+    * Implementar função de manipular eventos
     
 <pre></pre>
 
