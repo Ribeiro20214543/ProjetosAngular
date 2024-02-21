@@ -111,7 +111,7 @@ Este diretório inclui lições realizadas durante o estudo da documetnação An
         * Instalar jason-server a partir do npm:  
             <pre>npm install -g json-server</pre> 
         * Após configurado use este comando para testar:
-        <pre>json-server --watch db.json</pre>
+            <pre>json-server --watch db.json</pre>
     * Atualizar o serviço para usar o servidor web em vez do array local
     * Atualizar os componentes para usar chamadas assíncronas 
 
